@@ -556,7 +556,8 @@ section{
     } */
 
     .home_description{
-        background: url(/assets/gradanim.gif);
+/*         background: url(/assets/gradanim.gif); */
+        background: linear-gradient(-270deg, #efd8aa, #a591aa);
         font-family: 'Lato';
         text-align: center;
         color: aliceblue;
@@ -645,7 +646,6 @@ section{
     }
     .sec1_img img{
         transform: scaleX(-1) translateY(130px);
-        border: 3px solid red;
     }
 
 
@@ -717,7 +717,7 @@ section{
     }
 
     .home_description{
-        background: url(/assets/gradanim.gif);
+        background: linear-gradient(-270deg, #efd8aa, #a591aa);
         font-family: 'Lato';
         text-align: center;
         color: aliceblue;
@@ -739,7 +739,6 @@ section{
         position: relative;
         bottom: 0;
         right: 0;
-        /* border: 3px solid red; */
         width: 32vw;
         margin: 0px 32vw;
         transform: translate(0px,-50px);
