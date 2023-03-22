@@ -5,6 +5,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amethysta&display=swap');
 
+.centering{
+    margin: 60px 9vw;
+  }
+  #ctitle1{
+    
+    /* border: 3px solid red; */
+    display: inline-flex;
+    margin: auto;
+    /* background: linear-gradient(to right, #f3f75c 20%, #53e4b1 80%); */
+    background: linear-gradient(-270deg, #fff4dd 30%, #f1b1ff, #ff9da5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+
+  #ctitle1 > p{
+    font-size: 2em!important;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight:700!important;
+      text-align: center;
+      line-height: 1.1cm;
+      font-weight: bolder;
+      margin-bottom: 10px;
+  }
 
 /* ------------------------------------------------------------------------------ */
 *{
@@ -26,6 +50,8 @@ overflow-x: hidden;
     align-items: center;
 }
 
+
+
 /* navbar  - - - - - - - - - - - - - - - - - - - - - - */
 
 .brandimg{
@@ -45,7 +71,7 @@ overflow-x: hidden;
   
   
   
-  h1 a {
+  h1 > a {
   font-size: 2rem;
   font-family: 'Montserrat';
   background: -webkit-linear-gradient(30deg, #ff512f, #dd2476);
@@ -276,8 +302,9 @@ section{
     background-image: url(assets/nikerun.gif);
     width: 100%;
     height:100vh;
+    overflow: hidden;
     background-size:cover;
-    background-position-x: center;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -328,16 +355,16 @@ section{
 
 /* SMALL SCREEN  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -SMALL  */
 /* max-width: 500px) */
-@media  only screen and (min-width: 200px) {
+@media  only screen and (min-width: 200px)and (max-width:500px) {
     section{
         width: 100%;
     }
     .home_title{
-        font-size: 7rem;
+        font-size: 20vw;
         padding-top: 10px;
         padding-left: 10px;
         font-weight: bolder;
-        line-height: 2.3cm;
+        line-height: 2cm;
         
     }
 
@@ -375,11 +402,34 @@ section{
 
     }
 
+    .centering{
+        margin: 4vw 5vw;
+        margin-bottom: 32px;
+        margin-top: 30px;
+      }
+      #ctitle1{
+        background: black;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+        #ctitle1 p{
+            font-size: 4vw!important;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-weight:700;
+          text-align: left;
+          line-height: 1.2rem;
+          font-weight: bolder;
+          margin-bottom: 20px;
+      }
+
+    
+
     .home_img{
         /* z-index: -1000; */
         width: 85vw;
         margin: 0vw 15vw;
-        transform: translateY(-20vw);
+        /* transform: translateY(-20vw); */
 
     }
 
@@ -556,7 +606,7 @@ section{
     } */
 
     .home_description{
-/*         background: url(/assets/gradanim.gif); */
+        /* background: url(/assets/gradanim.gif); */
         background: linear-gradient(-270deg, #efd8aa, #a591aa);
         font-family: 'Lato';
         text-align: center;
@@ -571,8 +621,20 @@ section{
         /* mix-blend-mode: multiply; */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
     }
+    .centering{
+        margin: 4vw 5vw;
+        /* margin-bottom: 32px; */
+      }
+    #ctitle1 p{
+        font-size: 1.6em!important;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-weight:700!important;
+          text-align: center;
+          line-height: 1.1cm;
+          font-weight: bolder;
+          /* margin-bottom: 20px; */
+      }
 
     .home_img{
         /* display: inline-block; */
@@ -582,7 +644,7 @@ section{
         margin-bottom: 40vw;
     }
     .home_img img{
-        transform: scaleX(-1) scale(0.8) translateY(0px);
+        transform: scaleX(-1) scale(0.8) translateY(-120px);
 
     }
 
@@ -592,6 +654,7 @@ section{
         display: flex;
         flex-direction: column!important;
         align-items: center;
+        
     }
     .sec1_title{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -607,7 +670,7 @@ section{
         /* text-align: justify; */
         display: inline-flex;
         margin: auto;
-        padding: 10px;
+        /* padding: 10px; */
         margin-top: 20px;
         font-size:1.5rem;
         font-family: Arial, Helvetica, sans-serif;
@@ -645,7 +708,8 @@ section{
         z-index: 1000;
     }
     .sec1_img img{
-        transform: scaleX(-1) translateY(130px);
+        transform: scaleX(-1) translateY(-50px);
+        /* border: 3px solid red; */
     }
 
 
@@ -659,6 +723,7 @@ section{
         font-size: 8vw;
         margin:0px 20vw;
         width: 70vw;
+        text-align: center;
     }
 }
 
@@ -716,8 +781,8 @@ section{
 
     }
 
-    .home_description{
-        background: linear-gradient(-270deg, #efd8aa, #a591aa);
+    /* .home_description{
+        background-image: url(/assets/gradanim.gif);
         font-family: 'Lato';
         text-align: center;
         color: aliceblue;
@@ -728,22 +793,22 @@ section{
         font-size:2em;
         font-weight: bolder;
         line-height: 1.2cm;
-        /* mix-blend-mode: multiply; */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-    }
+    } */
 
    .home_img{
         display: inline-block;
         position: relative;
         bottom: 0;
         right: 0;
+        /* border: 3px solid red; */
         width: 32vw;
         margin: 0px 32vw;
         transform: translate(0px,-50px);
     }
-    .home_img img{
+    .home_img > img{
         transform: none;
 
     }
@@ -838,6 +903,7 @@ section{
         font-size: 8vw;
         margin:0px 20vw;
         width: 70vw;
+        text-align: center;
     }
 }
 
