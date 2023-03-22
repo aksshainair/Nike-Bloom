@@ -276,7 +276,7 @@ section{
     background-image: url(assets/nikerun.gif);
     width: 100%;
     height:100vh;
-    background-size:contain;
+    background-size:cover;
     background-position-x: center;
     background-repeat: no-repeat;
 }
